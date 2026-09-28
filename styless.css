@@ -29,3 +29,38 @@ img {
     margin: auto;
     max-width: 150px;
 }
+/* pd 1*/
+.banner {
+    height: 300px;
+    width: 300px;
+    background-image: url(https://img.magnific.com/vetores-gratis/fundo-de-textura-de-aquarela-pintado-a-mao-detalhado_1048-20008.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+}
+
+/* pd  2*/
+.hide {
+    display: none;
+}
+
+/* pd 3*/
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+/* pd 4*/
+.tituloprincipal {
+   color: rgba(184, 8, 228, 0.877);
+}
+
+/* all 1*/
+body {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* all 2*/
+a:hover {
+    opacity: 1.0;
+}
