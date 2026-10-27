@@ -1,20 +1,33 @@
 <!doctype html>
 <html lang="pt-BR">
 
-<head>
+<head class="header">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vendas de TVs online</title>
     <meta name="description" content="Loja online de TVs e acessórios com os melhores preços.">
     <link rel="stylesheet" href="./styless.css"> 
-</head>
+<nav class="nav">
+    <ul class="products-list">
+        <li class="product product-1">
+            <a href="products.html">Home</a>
+        </li>
+        <li class="product product-2">
+            <a href="category_tvs.html" target="_self">TVs </a>
+        </li>
+        <li class="product product-3">
+            <a href="category_acessories.html">Acessórios</a>
+        </li>
+    </ul>
+</nav>
+</header>
 
 <body class="page-category-Tvs">
     <h1>Categoria de produtos</h1>
     <h2>TVs</h2>
     <ol id="primary-list">
         <li>
-         <img src="Imagens/Tv_samsung.jpeg" width="400px" height="420px" alt="Imagem de televisão marca samsung" />
+         <img src="Imagens/Tv_samsung.png" width="400px" height="420px" alt="Imagem de televisão marca samsung" />
          <h3>Marca: Samsung</h3>
          <h4>R$ 2.000,00</h4>
          <h5>R$ 200,00 em 10x</h5>
@@ -23,10 +36,64 @@
        <li>
          <img src="Imagens/Tv_lg.png" width="400px" height="420px" alt="Imagem de televisão marca LG" />
          <h3>Marca: LG</h3>
-          <h4>R$ 5.000,00</h4>
+            <h4>R$ 5.000,00</h4>
          <h5>R$ 500,00 em 10x</h5>
          <a href="https://www.lg.com/br/tvs-e-soundbars/nanocell/75nu855bpsa/">Detalhes</a>
         </li>
+
+        
     </ol>
+
+<form id="tv-request-form">
+            <fieldset>
+                <legend>Solicitação de Modelo de TV</legend>
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" autocomplete="name" required />
+
+        <!--Email-->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Ex: maria@email.com" autocomplete="email" required>
+
+        <!--Modelo-->
+        <label for="modelo">Modelo de TV desejado:</label>
+        <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required />
+
+        <details id="modelo-tv">
+            <option value="1">Samsung</option>
+            <option value="2">LG</option>
+        </details>
+
+        <!--Botões-->
+        <button type="reset">Limpar formulário</button>
+        <button type="submit">Enviar solicitação</button>
+
+        <h2>Perguntas mais frequentes</h2>
+
+        <details>
+            <summary>Como solicitar um modelo?</summary>
+            <p>
+                Para solicitar um modelo de televisão que não está no site, preencha o formulário acima.
+            </p>
+        </details>
+        
+        <details>
+        <summary>Posso solicitar um modelo que não aparece no catálogo?</summary>
+        <p>
+            Sim! Utilize o campo de solicitação para informar
+            o modelo desejado, mesmo que ele não esteja listado.
+        </p>
+        </details>
+
+        <details>
+        <summary>Quais marcas de TVs estão disponíveis?</summary>
+        <p>
+            Atualmente, nosso catálogo apresenta modelos das
+            marcas Samsung e LG.
+        </p>
+        </details>
+
+    </fieldset> 
+</form>
 </body>
 </html>
